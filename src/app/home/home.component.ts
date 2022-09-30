@@ -3,18 +3,26 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'home-page',
   styles: [`
+    .search-box {
+      font-size: 20px;
+      border-radius: 25px;
+      padding: 8px 15px;
+      width: 45%
+    }
 
   `],
   template: `
     <div class="container py-4">
       <div class="pb-3 mb-4 border-bottom d-flex justify-content-center py-3">
-        <ul class="nav nav-pills">
+        <input type="text" class="search-box form-control" placeholder="Seach Location...">
+        <span class="fa-duotone fa-magnifying-glass"></span>
+        <!-- <ul class="nav nav-pills">
           <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
           <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
           <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-        </ul>
+        </ul> -->
       </div>
 
       <div class="p-5 mb-4 bg-light rounded-3">
@@ -41,17 +49,12 @@ import { Component, OnInit } from '@angular/core';
       </div>
 
 
-
-
       <div class="py-3 my-4">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
           <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About Me</a></li>
         </ul>
-        <p class="text-center text-muted">&copy; 2022 Company, Inc</p>
+        <p class="text-center text-muted">&copy; 2022 Carlos Villanueva</p>
       </div>
 
 
